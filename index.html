@@ -2,15 +2,57 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>忘忧草工作室 TA_Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祈愈工作室 PrayStudio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@0/autoload.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 </head>
 <body>
+    <audio id="myAudio" src="wow.wav"></audio>
     <h1>HelloWorld!</h1>
 	<button id="114">click</button>
+    <br>
+    <button id="redirectButton">BlueArchive愚人节活动</button>
+    <br>
+    <button id="redirectButton_1">Unity3D测试</button>
+    <br>
+    <button id="redirectButton_2">??</button>
+    <div id="box-container">
+        <img src="otto.jpg" alt="otto" id="otto">
+    </div>
 	<script>
         document.getElementById('114').onclick = function () {
-            alert("aaaaa")
+            alert("你好！")
         }
+        document.getElementById('redirectButton').addEventListener('click', function() {
+            window.location.href = 'BlueArchiveAprilFool';
+        });
+        document.getElementById('redirectButton_1').addEventListener('click', function() {
+            window.location.href = 'U3D/index.html';
+        });
+        document.getElementById('redirectButton_2').addEventListener('click', ottoani);
+        function ottoani() {
+            playSound()
+            gsap.to('#otto',{
+                scale: 2,
+                rotation: '720deg',
+                position : 'absolute',
+                }
+            )
+        }
+
+        function playSound() {
+            const audioElement = document.getElementById('myAudio');
+            audioElement.play()
+                .then(() => {
+                    console.log('声音播放成功');
+                })
+                .catch(error => {
+                    console.error('播放声音时出错:', error);
+                });
+        }
+
     </script>
 </body>
 </html>
