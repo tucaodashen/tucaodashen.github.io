@@ -1,0 +1,79 @@
+baseURL = "https://tucaodashen.github.io"
+languageCode = "zh-cn"
+title = "祈愈社"
+theme = "hugo-digital-garden-theme"
+favicon="favicon.png"
+
+copyright = "祈愈社 ©"
+
+
+
+[params]
+  name = "祈愈社 PrayStudio"
+  description = "Produce Reachable Antidote for You！我们以信念为火，锻造跨越语言藩篱的解药，让每一份热爱触手可及。"
+  initials = "PrayLocalization"
+  googleAnalytics = "G-JX7LHHZFK2"
+
+  [[params.social]]
+    name = "Github"
+    link = "https://github.com/tucaodashen"
+    icon = "fab fa-github"
+
+  [[params.social]]
+    name = "Medium" 
+    link = "https://e-hentai.org/?f_search=uploader%3A%22Tucaodashen_official%22"
+    icon = "fab fa-medium-m"
+
+
+
+[menu]
+
+  [[menu.main]]
+    name = "成员与致谢"
+    url = "/members/"
+    weight = 1
+  [[menu.main]]
+    name = "加入我们！"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "Library"
+    url = "/library/"
+    weight = 4
+  
+
+
+[taxonomies]
+  garden_tags = 'garden_tags'
+  project_tags = 'project_tags'
+  library_tags = 'library_tags'
+
+
+
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.goldmark.parser]
+    autoHeadingID = true
+    autoHeadingIDType = 'github'
+    wrapStandAloneImageWithinParagraph = true
+    [markup.goldmark.parser.attribute]
+      block = false
+      title = true
+  [markup.goldmark.extensions]
+    definitionList = true
+    footnote = true
+    linkify = true
+    strikethrough = true
+    table = true
+    taskList = true
+    typographer = true
+  [markup.highlight]
+    # Choose from https://xyproto.github.io/splash/docs/all.html
+    style = 'monokailight'

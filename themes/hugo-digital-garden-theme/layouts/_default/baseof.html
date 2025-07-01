@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <link rel="icon" href="{{ "favicon.png" | absURL }}" sizes="32x32" type="image/png">
+    <body>
+        {{- partial "header.html" . -}}
+        <div id="content">
+            {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+        {{- partial "script.html" . -}}
+    </body>
+</html>
