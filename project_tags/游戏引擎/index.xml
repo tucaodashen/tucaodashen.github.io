@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>游戏引擎 on 祈愈社</title>
+    <link>https://tucaodashen.github.io/project_tags/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E/</link>
+    <description>Recent content in 游戏引擎 on 祈愈社</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <copyright>祈愈社 ©</copyright>
+    <lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://tucaodashen.github.io/project_tags/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenArchive游戏框架</title>
+      <link>https://tucaodashen.github.io/projects/openarchive/inede/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://tucaodashen.github.io/projects/openarchive/inede/</guid>
+      <description>基于MonoGame的蓝图式跨平台简易2D/3D游戏引擎</description>
+    </item>
+  </channel>
+</rss>

@@ -1,58 +1,497 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>祈愈工作室 PrayStudio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@0/autoload.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-</head>
-<body>
-    <audio id="myAudio" src="wow.wav"></audio>
-    <h1>HelloWorld!</h1>
-	<button id="114">click</button>
-    <br>
-    <button id="redirectButton">BlueArchive愚人节活动</button>
-    <br>
-    <button id="redirectButton_1">Unity3D测试</button>
-    <br>
-    <button id="redirectButton_2">??</button>
-    <div id="box-container">
-        <img src="otto.jpg" alt="otto" id="otto">
-    </div>
-	<script>
-        document.getElementById('114').onclick = function () {
-            alert("你好！")
-        }
-        document.getElementById('redirectButton').addEventListener('click', function() {
-            window.location.href = 'BlueArchiveAprilFool';
-        });
-        document.getElementById('redirectButton_1').addEventListener('click', function() {
-            window.location.href = 'U3D/index.html';
-        });
-        document.getElementById('redirectButton_2').addEventListener('click', ottoani);
-        function ottoani() {
-            playSound()
-            gsap.to('#otto',{
-                scale: 2,
-                rotation: '720deg',
-                position : 'absolute',
-                }
-            )
-        }
-
-        function playSound() {
-            const audioElement = document.getElementById('myAudio');
-            audioElement.play()
-                .then(() => {
-                    console.log('声音播放成功');
-                })
-                .catch(error => {
-                    console.error('播放声音时出错:', error);
-                });
-        }
-
+<html><head>
+	<meta name="generator" content="Hugo 0.147.8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JX7LHHZFK2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-JX7LHHZFK2');
     </script>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@200;300;400;500;600&family=Encode+Sans+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/my_style.css">
+    
+    
+    
+    <title>祈愈社</title>
+    <meta name="description" content="Produce Reachable Antidote for You！我们以信念为火，锻造跨越语言藩篱的解药，让每一份热爱触手可及。">
+</head><link rel="icon" href="https://tucaodashen.github.io/favicon.png" sizes="32x32" type="image/png">
+    <body><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="https://tucaodashen.github.io/">
+            
+            <b style="font-weight: 800;">PrayLocalization</b>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0"><li class='nav-item '>
+                    <a class="nav-link" href="/members/"> 成员与致谢</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/about/"> 加入我们！</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/projects/"> Projects</a>
+                </li>
+            <li class='nav-item '>
+                    <a class="nav-link" href="/library/"> Library</a>
+                </li>
+             
+            <li class="nav-item px-2 pt-1">
+                <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="content">
+<link rel="icon" href="https://tucaodashen.github.io/favicon.png" sizes="32x32" type="image/png">
+<div class="mt-5 pt-5 pb-1">
+    <div class="container" >
+       	<h1 class="name display-1"><b>祈愈社 PrayStudio</b></h1>
+    </div>
+</div>
+<div class="mb-5 py-4">
+    <div class="container">
+        <h2 class="bio lh-base fs-1 serif">Produce Reachable Antidote for You！我们以信念为火，锻造跨越语言藩篱的解药，让每一份热爱触手可及。</h2>
+    </div>
+</div>
+
+<div class="container py-3">
+	<div class="row justify-content-between my-5">
+		
+		<div class="col-lg-4">
+			
+          	<div class="pb-4">
+              	<a class="heading fs-2" href="/garden/">公告与通知</a>
+          	</div>      
+			 <p class="subheading">EULA、许可证、cookbook和公告</p> 
+			
+			<div class="row row-cols-1 g-4 mb-5">
+				
+				<div class="col">
+    <div class="card h-100 top-highlight">
+        <div class="card-body">
+            <div class="row justify-content-between">
+                <div class="col-8">
+                    <h5 class="card-title">关于我们的一切</h5>
+                    
+                </div>
+                <div class="col-4 ">
+                    <p class="card-right">
+                        <span class="card-date">Jun 19, 2025 </span>
+                        <br/>
+    
+    
+
+                    </p>
+                </div>
+            </div>
+            <a href="https://tucaodashen.github.io/garden/aboutus/" class="stretched-link"></a>
+        </div>
+    </div>   
+</div>   
+				
+				<div class="col">
+    <div class="card h-100 top-highlight">
+        <div class="card-body">
+            <div class="row justify-content-between">
+                <div class="col-8">
+                    <h5 class="card-title">祈愈汉化组 作品食用指南</h5>
+                    
+                </div>
+                <div class="col-4 ">
+                    <p class="card-right">
+                        <span class="card-date">Jun 19, 2025 </span>
+                        <br/>
+    
+    
+
+                    </p>
+                </div>
+            </div>
+            <a href="https://tucaodashen.github.io/garden/cookbook/" class="stretched-link"></a>
+        </div>
+    </div>   
+</div>   
+				
+				<div class="col">
+    <div class="card h-100 top-highlight">
+        <div class="card-body">
+            <div class="row justify-content-between">
+                <div class="col-8">
+                    <h5 class="card-title">祈愈汉化组 成立五周年招新！</h5>
+                    
+                </div>
+                <div class="col-4 ">
+                    <p class="card-right">
+                        <span class="card-date">Jun 19, 2025 </span>
+                        <br/>
+    
+    
+
+                    </p>
+                </div>
+            </div>
+            <a href="https://tucaodashen.github.io/garden/recruitment/" class="stretched-link"></a>
+        </div>
+    </div>   
+</div>   
+				
+				<div class="col">
+    <div class="card h-100 top-highlight">
+        <div class="card-body">
+            <div class="row justify-content-between">
+                <div class="col-8">
+                    <h5 class="card-title">祈愈汉化组 最终用户许可协议(EULA)[2025/4/4 Ver1]</h5>
+                    
+                </div>
+                <div class="col-4 ">
+                    <p class="card-right">
+                        <span class="card-date">Jun 19, 2025 </span>
+                        <br/>
+    
+    
+
+                    </p>
+                </div>
+            </div>
+            <a href="https://tucaodashen.github.io/garden/eula_latest/" class="stretched-link"></a>
+        </div>
+    </div>   
+</div>   
+				
+      		</div>
+			
+			<div class="d-flex flex-row-reverse">
+        		<a href="/garden/" role="button" class="btn btn-sm see-all">See all articles</a>
+      		</div>
+      		
+		</div>
+    	
+		
+		<div class="col-lg-7">
+			
+			<div class="pb-4">
+				<a class="heading fs-2" href="/projects/">项目</a>
+			</div>          
+			 
+			<p class="subheading">已经立项的所有工程</p> 
+			
+			
+			<div class="row row-cols-1 row-cols-md-2 g-4 mb-5" data-masonry='{"percentPosition": true }'>
+				
+				<div class="col">
+    <div class="card top-highlight">
+        
+        
+        <div class="card-body">
+            <h5 class="card-title">Hifumi&#39;s Dream[JP→EN]</h5>
+            <p class="card-text">(C105) [こずみっくいであ (あざな)] 阿慈谷ヒフミは夢をみる (ブルーアーカイブ) [英訳]</p>
+            <a href="https://tucaodashen.github.io/projects/hifumidream/" class="stretched-link"></a>
+            <div class="row justify-content-between">
+                <div class="col align-self-start">
+                
+                
+                <span class="badge tag-badge">同人志</span>
+                
+                <span class="badge tag-badge">翻译</span>
+                
+                <span class="badge tag-badge">蔚蓝档案</span>
+                
+                <span class="badge tag-badge">全年龄</span>
+                
+                
+                </div>
+                <div class="col align-self-end" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+				
+				<div class="col">
+    <div class="card top-highlight">
+        
+        
+        <div class="card-body">
+            <h5 class="card-title">OpenArchive游戏框架</h5>
+            <p class="card-text">基于MonoGame的蓝图式跨平台简易2D/3D游戏引擎</p>
+            <a href="https://tucaodashen.github.io/projects/openarchive/inede/" class="stretched-link"></a>
+            <div class="row justify-content-between">
+                <div class="col align-self-start">
+                
+                
+                <span class="badge tag-badge">游戏引擎</span>
+                
+                <span class="badge tag-badge">编程</span>
+                
+                <span class="badge tag-badge">CSharp</span>
+                
+                
+                </div>
+                <div class="col align-self-end" style="text-align: right">
+                    
+    
+    <span class="status">Seeding 🌱</span>
+    
+
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+				
+				<div class="col">
+    <div class="card top-highlight">
+        
+        
+        <div class="card-body">
+            <h5 class="card-title">一日一日富美[JP→CN]</h5>
+            <p class="card-text">[pixiv]まいにちヒフミ(560831)</p>
+            <a href="https://tucaodashen.github.io/projects/ahad/" class="stretched-link"></a>
+            <div class="row justify-content-between">
+                <div class="col align-self-start">
+                
+                
+                <span class="badge tag-badge">图集</span>
+                
+                <span class="badge tag-badge">搬运</span>
+                
+                <span class="badge tag-badge">蔚蓝档案</span>
+                
+                <span class="badge tag-badge">R18</span>
+                
+                
+                </div>
+                <div class="col align-self-end" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+				
+				<div class="col">
+    <div class="card top-highlight">
+        
+        
+        <div class="card-body">
+            <h5 class="card-title">你们这是穿的什么啊喂![JP→CN]</h5>
+            <p class="card-text">[あーゆ新] 何?その格好… (ブルーアーカイブ) [中国翻訳]</p>
+            <a href="https://tucaodashen.github.io/projects/mikacloth/" class="stretched-link"></a>
+            <div class="row justify-content-between">
+                <div class="col align-self-start">
+                
+                
+                <span class="badge tag-badge">同人志</span>
+                
+                <span class="badge tag-badge">翻译</span>
+                
+                <span class="badge tag-badge">蔚蓝档案</span>
+                
+                <span class="badge tag-badge">全年龄</span>
+                
+                
+                </div>
+                <div class="col align-self-end" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+				
+				<div class="col">
+    <div class="card top-highlight">
+        
+        
+        <div class="card-body">
+            <h5 class="card-title">喵喵补习部[JP→CN]</h5>
+            <p class="card-text">[ほぷラテカフェほぷ (ほぷラテ)] にゃんにゃん補習授業部 (ブルーアーカイブ) [中国翻訳] [DL版]</p>
+            <a href="https://tucaodashen.github.io/projects/nyannyanclub/" class="stretched-link"></a>
+            <div class="row justify-content-between">
+                <div class="col align-self-start">
+                
+                
+                <span class="badge tag-badge">同人志</span>
+                
+                <span class="badge tag-badge">翻译</span>
+                
+                <span class="badge tag-badge">蔚蓝档案</span>
+                
+                <span class="badge tag-badge">全年龄</span>
+                
+                
+                </div>
+                <div class="col align-self-end" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+				
+				<div class="col">
+    <div class="card top-highlight">
+        
+        
+        <div class="card-body">
+            <h5 class="card-title">女仆小春出动！[JP→CN]</h5>
+            <p class="card-text">(C105) [三月兎 (三日月兎々)] メイドインコハルハバラ (ブルーアーカイブ)</p>
+            <a href="https://tucaodashen.github.io/projects/maidkoharu/" class="stretched-link"></a>
+            <div class="row justify-content-between">
+                <div class="col align-self-start">
+                
+                
+                <span class="badge tag-badge">同人志</span>
+                
+                <span class="badge tag-badge">翻译</span>
+                
+                <span class="badge tag-badge">蔚蓝档案</span>
+                
+                <span class="badge tag-badge">全年龄</span>
+                
+                
+                </div>
+                <div class="col align-self-end" style="text-align: right">
+                    
+    
+    <span class="status">Evergreen 🌳</span>
+    
+
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+				
+    		</div>
+			
+			<div class="d-flex flex-row-reverse">
+				<a href="/projects/" role="button" class="btn btn-sm see-all">See all projects</a>
+			</div>    
+			
+  		</div>
+	</div>
+
+	
+	<div class="container py-3">
+		<div class="row justify-content-between my-5">
+			<div class="col-sm-4 col-lg-3">
+				
+				<div class="pb-4">
+					<a class="heading fs-2" href="/library/">归档</a>
+				</div>
+				 <p class="subheading">所有可以公开的我们所保存的媒体内容</p> 
+				<div class="d-flex">
+					<a href="/library/" role="button" class="btn btn-sm see-all">See all books</a>
+				</div>
+				
+			</div>
+			<div class="col me-auto">
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+					
+					<div class="col">
+						<div class="card">
+							
+							
+							
+							<img src="https://tucaodashen.github.io/library/book1/featured_hu_39fee95cd5288d93.jpg" alt="祈愈社" class="card-img-top">
+							
+							<div class="card-body">
+								<h5 class="card-title">ToSchool——蔚蓝档案日服2025年愚人节网页游戏</h5>
+								<p class="card-text">
+									<figcaption class="blockquote-footer">碧蓝档案情报站</figcaption>
+								</p>
+								<a href="https://tucaodashen.github.io/library/book1/" class="stretched-link"></a>
+							</div>
+						</div>  
+					</div>
+					
+					<div class="col">
+						<div class="card">
+							
+							
+							
+							<img src="https://tucaodashen.github.io/library/book2/featured_hu_6ec085e413bcba83.jpg" alt="祈愈社" class="card-img-top">
+							
+							<div class="card-body">
+								<h5 class="card-title">Unity3D测试</h5>
+								<p class="card-text">
+									<figcaption class="blockquote-footer">PrayStudio</figcaption>
+								</p>
+								<a href="https://tucaodashen.github.io/library/book2/" class="stretched-link"></a>
+							</div>
+						</div>  
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+        </div><div class="container">
+    <div class="row justify-content-between">
+        <div class="col-sm-4">
+            <p class="footer">祈愈社 © 2025 </p>
+        </div>
+        <div class="col-sm-6 d-flex flex-row-reverse">
+            
+            <a class="footer-social px-2"  href="https://github.com/tucaodashen" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <a class="footer-social px-2"  href="https://e-hentai.org/?f_search=uploader%3A%22Tucaodashen_official%22" target="_blank"><i class="fab fa-medium-m"></i></a>
+            
+        </div>
+    </div>
+</div>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="/js/dark.js"></script>
+<script>
+
+
+var savedTheme = localStorage.getItem("dark-mode-storage") || "light" 
+setTheme(savedTheme);
+
+</script>
+<script src="/js/isotope.js"></script>
+<script src="/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, securityLevel: 'loose'});</script>
 </body>
 </html>
