@@ -1,8 +1,9 @@
 ---
-title: "Digital Garden"
-date: 2021-01-01
-layout: single
-summary: "A collection of thoughts and articles at different development stages"
+title: "相关人员"
+date: 2025-06-19
+draft: false
+layout: about
+summary: "与本社有着直接或间接联系的人员！"
 ---
 <span style="font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;">
 
