@@ -25,4 +25,4 @@ library_tags: ["网页游戏", "Unity"]
 <a href="../../WebGL/ToSchool" class="round-button">点击跳转</a>
 
 
-此为BlueArchive日服2025年愚人节网页游戏的汉化版本，原发布地址为mob-toschool.github.io，本组当时因学习而保存，后发因发布原因未知原因关闭，遂在此保留一版供大家游玩。
+此为BlueArchive日服2025年愚人节网页游戏的汉化版本，原发布地址为mob-toschool.github.io，本组当时因学习而保存，后因发布源因未知原因关闭，遂在此保留一版供大家游玩。
